@@ -22,5 +22,30 @@ make menuconfig
 
 make
 
-# Create Flash Binary
+## Create Flash Binary
 scripts/update_mks_robin.py ./out/klipper.bin ./out/Robin_nano.bin
+
+---
+# Firmware Setup - BTT EBB36 - USB
+
+make clean
+
+make menuconfig
+
+1. Enable extra low-level configuration options
+
+2. Micro-controller Architecture = STMicroelectronics STM32
+
+3. Processor model = STM32G0B1
+
+4. Bootloader offset = No bootloader
+
+5. Clock Reference = 8 MHz crystal
+
+6. Communication interface = USB (on PA11/PA12)
+
+Put board into DFU mode (Hold Boot and press and release Reset)
+
+Find device ID using lsusb (will have DFU indicated)
+
+make flash FLASH_DEVICE=[ID]

@@ -49,3 +49,26 @@ Put board into DFU mode (Hold Boot and press and release Reset)
 Find device ID using lsusb (will have DFU indicated)
 
 make flash FLASH_DEVICE=[ID]
+
+---
+# Firmware Setup - BTT LIS2DW
+
+make clean
+
+make menuconfig
+
+1. Enable extra low-level configuration options
+
+2. Micro-controller Architecture = PI 2040
+
+3. Bootloader offset = No bootloader
+
+4. Flash chip = W25Q080 with CLKDIV2
+
+5. Communication interface = USB
+
+Put board into DFU mode (Hold boot and reconnect USB)
+
+Find device ID using lsusb (RP2 Boot)
+
+make flash FLASH_DEVICE=[ID]

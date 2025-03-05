@@ -4,7 +4,7 @@ Klipper backup script for manual or automated GitHub backups
 This backup is provided by [Klipper-Backup](https://github.com/Staubgeborener/klipper-backup).
 
 ---
-# Firmware Setup
+# Firmware Setup - Robin Nano 1.2
 
 make clean
 

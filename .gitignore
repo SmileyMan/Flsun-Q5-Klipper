@@ -2,8 +2,15 @@
 secrets.conf
 *.swp
 *.tmp
+*.swp
 printer-[0-9]*_[0-9]*.cfg
 *.bak
+*.tmp
+*.bkp
+printer-[0-9]*_[0-9]*.cfg
+*.csv
+*.bak
+*.zip
 *.bkp
 *.csv
 *.zip
